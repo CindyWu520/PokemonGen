@@ -28,7 +28,6 @@
 ```
 PokemonGen/
 ├── frontend/    # React app (Vite + Tailwind)
- guide
 ├── slides/            # Presentation slides
 ├── server/            # Express API + Postgres
 └── docker-compose.yml # Database setup
@@ -51,10 +50,7 @@ Create environment files:
 **Backend** (`server/.env`):
 
 ```env
-PORT=3001
 DATABASE_URL=postgres://postgres:postgres@localhost:5432/pokegen
-CORS_ORIGIN=http://localhost:5173
-GEMINI_API_KEY=your_api_key_here  # Optional: for AI features
 ```
 
 **Frontend** (`frontend/.env`):
@@ -141,8 +137,8 @@ Without the API key, the app uses simulated placeholder generation.
 
 - Verify `CORS_ORIGIN` in `server/.env` matches your frontend URL
 
-## 📝 License
+## 📝 Learning Material
 
-[![Tutorial from AhsanAyaz]https://github.com/AhsanAyaz/react-in-90ish/tree/main/client-tutorial]
+[Tutorial from AhsanAyaz](https://github.com/AhsanAyaz/react-in-90ish/tree/main/client-tutorial)
 
 ---
