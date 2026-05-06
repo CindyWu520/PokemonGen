@@ -43,7 +43,7 @@ export default function GalleryPage() {
       const res = await fetch(`${API}/api/pokaimon/${id}/like`, {
         method: "PATCH",
       })
-      if (!res.ok) throw new Error("Failed to like");
+      if (res.ok) throw new Error("Failed to like");
       // need to reload to display like
       refetch();
     } catch (e) {
